@@ -21,7 +21,7 @@ $ docker pull ubuntu
 $ docker run ubuntu
 
 ### Run docker interactive & terminal
-$ docker run -it ubunutu
+$ docker run -i -t ubunutu
 
 ### CONFIG APACHE ON UBUNTU ###
 ### https://phoenixnap.com/kb/how-to-install-apache-web-server-on-ubuntu-18-04 ###
