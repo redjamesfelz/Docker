@@ -23,6 +23,9 @@ $ docker run ubuntu
 ### Run docker interactive & terminal
 $ docker run -i -t ubunutu
 
+### Update and Upgrade Ubuntu
+sudo apt update && sudo apt upgrade -y
+
 ### CONFIG APACHE ON UBUNTU ###
 ### https://phoenixnap.com/kb/how-to-install-apache-web-server-on-ubuntu-18-04 ###
 
@@ -48,7 +51,6 @@ $ sudo ufw status
 /var/www/html/
 
 ### APACHE COMMANDS ###
-sudo systemctl stop apache2.service
-sudo systemctl start apache2.service
-sudo systemctl restart apache2.service
-sudo systemctl reload apache2.service
+service apache2 start
+service apache2 status
+service apache2 stop
