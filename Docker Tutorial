@@ -1,0 +1,54 @@
+
+ ▄▀▀█▄▄   ▄▀▀▀▀▄   ▄▀▄▄▄▄   ▄▀▀▄ █  ▄▀▀█▄▄▄▄  ▄▀▀▄▀▀▀▄ 
+█ ▄▀   █ █      █ █ █    ▌ █  █ ▄▀ ▐  ▄▀   ▐ █   █   █ 
+▐ █    █ █      █ ▐ █      ▐  █▀▄    █▄▄▄▄▄  ▐  █▀▀█▀  
+  █    █ ▀▄    ▄▀   █        █   █   █    ▌   ▄▀    █  
+ ▄▀▄▄▄▄▀   ▀▀▀▀    ▄▀▄▄▄▄▀ ▄▀   █   ▄▀▄▄▄▄   █     █   
+█     ▐           █     ▐  █    ▐   █    ▐   ▐     ▐   
+▐                 ▐        ▐        ▐                  
+
+
+### Install Docker
+https://docs.docker.com/docker-for-windows/install/
+
+### CREATE DOCKER ###
+### https://www.youtube.com/watch?v=pBTD9bowokA ###
+
+### Pull Image
+$ docker pull ubuntu
+
+### Run Image in Container
+$ docker run ubuntu
+
+### Run docker interactive & terminal
+$ docker run -it ubunutu
+
+### CONFIG APACHE ON UBUNTU ###
+### https://phoenixnap.com/kb/how-to-install-apache-web-server-on-ubuntu-18-04 ###
+
+### Install Apache
+$ sudo apt-get install apache2
+
+### Verify Apache install
+Visit http://local.server.ip in browser
+
+### CONFIGURE FIREWALL WITH APACHE ###
+### Config Firewall
+$ sudo ufw show app list
+
+### Allow Apache in Firewall
+$ sudo ufw allow 'Apache'
+
+### Verify firewall status
+$ sudo ufw status
+
+### CONFIGURE APACHE WEB SERVICE ###
+
+### Upoload Site files ###
+/var/www/html/
+
+### APACHE COMMANDS ###
+sudo systemctl stop apache2.service
+sudo systemctl start apache2.service
+sudo systemctl restart apache2.service
+sudo systemctl reload apache2.service
