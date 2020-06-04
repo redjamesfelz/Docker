@@ -54,3 +54,18 @@ $ sudo ufw status
 service apache2 start
 service apache2 status
 service apache2 stop
+
+
+### ORIGINAL
+docker run -dit --name SiteTester01 -p 8081:80 -v "c:users\red james guevarra\desktop\sitetester":/usr/local/apache2/htdocs/ httpd:2.4
+
+# List all docker images
+docker images
+
+# List all running containters
+docker ps
+
+#List all containers
+docker ps -a
+
+
