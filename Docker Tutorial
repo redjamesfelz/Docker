@@ -68,4 +68,32 @@ docker ps
 #List all containers
 docker ps -a
 
+### ORIGINAL
+docker run -dit --name SiteTester01 -p 8081:80 -v "c:users\red james guevarra\desktop\sitetester":/usr/local/apache2/htdocs/ httpd:2.4
 
+# List all docker images
+docker images
+
+# List all running containters
+docker ps
+
+#List all containers
+docker ps -a
+
+#pull apache/php7.4 image
+docker pull php:7.4-apache
+
+
+
+
+
+#Build image
+docker build -t php_apache .
+
+#Build Containter
+docker run -dit --name SiteTesterphp01 -p 8090:80 php_apache01
+
+
+docker build -t sitetest81 .
+
+docker run -dit --name sitetest81 -p 8081:80 sitetest81
